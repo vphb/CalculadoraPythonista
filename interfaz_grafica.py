@@ -133,10 +133,10 @@ btnsin = Button(calc, text="sin",width=6,
                ).grid(row=1, column= 7, pady = 1)
   
 # ROW 2 :
-btn2Pi = Button(calc, text="2pi",width=6, 
+btn_potencia = Button(calc, text="^",width=6, 
                 height=2,bg='black',fg='white',
                 font=('Helvetica',20,'bold'),
-                bd=4,command=lambda:added_value.tau()
+                bd=4,command=lambda:added_value.potencia()
                ).grid(row=2, column= 4, pady = 1)
   
 btnCosh = Button(calc, text="Cosh",width=6,
@@ -201,10 +201,10 @@ btnexpm1 = Button(calc, text="expm1",width=6,
                   bd = 4,command=lambda:added_value.expm1()
                  ).grid(row=4, column= 6, pady = 1)
   
-btngamma = Button(calc, text="gamma",width=6,
+btnCociente = Button(calc, text="//",width=6,
                   height=2,bg='black',fg='white',
                   font=('Helvetica',20,'bold'),
-                  bd=4,command=lambda:added_value.lgamma()
+                  bd=4,command=lambda:added_value.cociente()
                  ).grid(row=4, column= 7, pady = 1)
 # ROW 5 :
 btnlog2 = Button(calc, text="log2",width=6, 
