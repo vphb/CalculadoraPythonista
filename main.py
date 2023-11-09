@@ -60,6 +60,8 @@ class Calc():
             self.total %= self.current
         if self.op == "potencia":
             self.total **= self.current
+        if self.op == "cociente":
+            self.total //= self.current
         self.input_value=True
         self.check_sum=False
         self.display(self.total)
@@ -362,7 +364,7 @@ btnexpm1 = Button(calc, text="expm1",width=6,
 btnCociente = Button(calc, text="//",width=6,
                   height=2,bg='black',fg='white',
                   font=('Helvetica',20,'bold'),
-                  bd=4,command=lambda:added_value.cociente()
+                  bd=4,command=lambda:added_value.operation("cociente")
                  ).grid(row=4, column= 7, pady = 1)
 # ROW 5 :
 btnlog2 = Button(calc, text="log2",width=6, 
