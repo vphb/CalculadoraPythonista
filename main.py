@@ -58,6 +58,8 @@ class Calc():
             self.total /= self.current
         if self.op == "mod":
             self.total %= self.current
+        if self.op == "potencia":
+            self.total **= self.current
         self.input_value=True
         self.check_sum=False
         self.display(self.total)
@@ -91,11 +93,6 @@ class Calc():
     def e(self):
         self.result =  False
         self.current = math.e
-        self.display(self.current)
-
-    def exp(self):
-        self.result =  False
-        self.current = math.exp(float(txtDisplay.get()))
         self.display(self.current)
     
     def mathPM(self):
@@ -272,7 +269,7 @@ btnsin = Button(calc, text="sin",width=6,
 btn_potencia = Button(calc, text="^",width=6, 
                 height=2,bg='black',fg='white',
                 font=('Helvetica',20,'bold'),
-                bd=4,command=lambda:added_value.potencia()
+                bd=4,command=lambda:added_value.operation("potencia")
                ).grid(row=2, column= 4, pady = 1)
   
 btnCosh = Button(calc, text="Cosh",width=6,
