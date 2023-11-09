@@ -128,6 +128,16 @@ class Calc():
         self.current = math.tanh(math.radians(float(txtDisplay.get())))
         self.display(self.current)
 
+    def sin(self):
+        self.result = False
+        self.current = math.sin(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
+  
+    def sinh(self):
+        self.result = False
+        self.current = math.sinh(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
+
 added_value = Calc()
 
 
