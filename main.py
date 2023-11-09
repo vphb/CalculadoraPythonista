@@ -138,6 +138,14 @@ class Calc():
         self.current = math.sinh(math.radians(float(txtDisplay.get())))
         self.display(self.current)
 
+    def acosh(self):
+        self.result = False
+        self.current = math.acosh(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def asinh(self):
+        self.result = False
+        self.current = math.asinh(float(txtDisplay.get()))
     def log(self):
         self.result = False
         self.current = math.log(float(txtDisplay.get()))
