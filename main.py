@@ -82,6 +82,16 @@ class Calc():
     def All_Clear_Entry(self):
         self.Clear_Entry()
         self.total = 0
+    
+    def pi(self):
+        self.result =  False
+        self.current = math.pi
+        self.display(self.current)
+  
+    def e(self):
+        self.result =  False
+        self.current = math.e
+        self.display(self.current)
 
 added_value = Calc()
 
