@@ -1,6 +1,7 @@
 from tkinter import *
 import math
 import tkinter.messagebox
+from operaciones_basicas import numberEnter, sum_of_total, valid_function
   
 root = Tk()
 root.title("Scientific Calculator")
