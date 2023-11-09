@@ -174,6 +174,11 @@ class Calc():
         self.current = math.log1p(float(txtDisplay.get()))
         self.display(self.current)
 
+    def degrees(self):
+        self.result = False
+        self.current = math.degrees(float(txtDisplay.get()))
+        self.display(self.current)
+
 added_value = Calc()
 
 txtDisplay = Entry(calc, font=('Helvetica',20,'bold'),
