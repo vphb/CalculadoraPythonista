@@ -48,7 +48,9 @@ El proceso de implementación fue el siguiente:
 9. Implementamos las operaciones trigonometricas  números π y e respetando el flujo de trabajo, es decir, se crea una rama *Feature* para cada operación y luego se realiza el merge con la rama develop. con esto implementado, realizamos la etiquetación de `v2.0`.
 10. Luego de la creación de la version `v2.0`, nos percatamos de un hotfix, el cual se produjo con la implementacion de la funcionalidad del boton ^, por lo que se soluciona y da paso a la version `v2.1`
 11. Se continua con la implementacion de las funcionalidades de los botones exp y log por parte de Nicolas, mientras que Victoria implementa las funciones de asinh y acosh, pero todas estas se guardan en la rama de *feature/acosh_and_asinh*, generando un conflicto,, el cual se soluciona al realizar la pull request de dicha rama hacia *develop* y combinando ambos codigos.
-
+12. Se agregan las funcionalidades de los botones restantes y se da paso a la version `v3.0`, donde queda la calculadora totalmente operativa.
+13. Finalmente se agregan comentarios al archivo `main.py` para dejar la version final `v4.0`
+14. De forma adicionaal se completa el archivo `README.md`
 ---
 
 # Conflictos de Merge
@@ -59,4 +61,6 @@ El proceso de implementación fue el siguiente:
 * Conflicto paso 11:
 ![](/images/Captura%20de%20pantalla%202023-11-08%20a%20la(s)%2023.17.00.png)
 
+# Diagrama GitFlow
 
+Para ver el diagrama sugerimos verlo en la pagina de GitHub, dentro del repositorio `CalculadoraPythonista` -> `Insights` -> `Network`
