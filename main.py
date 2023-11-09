@@ -72,6 +72,16 @@ class Calc():
         self.check_sum=True
         self.op=op
         self.result=False
+    
+    def Clear_Entry(self):
+        self.result = False
+        self.current = "0"
+        self.display(0)
+        self.input_value = True
+  
+    def All_Clear_Entry(self):
+        self.Clear_Entry()
+        self.total = 0
 
 added_value = Calc()
 
