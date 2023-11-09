@@ -1,6 +1,7 @@
 from tkinter import *
 import math
 import tkinter.messagebox
+#from operaciones_basicas import numberEnter, sum_of_total, valid_function
   
 root = Tk()
 root.title("Calculadora Pythonista")
@@ -49,6 +50,8 @@ class Calc():
     def valid_function(self):
         if self.op == "add":
             self.total += self.current
+        if self.op == "sub":
+            self.total -= self.current
         self.input_value=True
         self.check_sum=False
         self.display(self.total)
