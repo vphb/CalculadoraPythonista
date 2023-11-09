@@ -97,6 +97,16 @@ class Calc():
         self.result =  False
         self.current = math.exp(float(txtDisplay.get()))
         self.display(self.current)
+    
+    def mathPM(self):
+        self.result = False
+        self.current = -(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def squared(self):
+        self.result = False
+        self.current = math.sqrt(float(txtDisplay.get()))
+        self.display(self.current)
 
 added_value = Calc()
 
