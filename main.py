@@ -146,6 +146,14 @@ class Calc():
     def asinh(self):
         self.result = False
         self.current = math.asinh(float(txtDisplay.get()))
+    def log(self):
+        self.result = False
+        self.current = math.log(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def exp(self):
+        self.result = False
+        self.current = math.exp(float(txtDisplay.get()))
         self.display(self.current)
 
 added_value = Calc()
