@@ -54,6 +54,8 @@ class Calc():
             self.total -= self.current
         if self.op == "multi":
             self.total *= self.current
+        if self.op == "divide":
+            self.total /= self.current
         self.input_value=True
         self.check_sum=False
         self.display(self.total)
