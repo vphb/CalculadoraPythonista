@@ -52,6 +52,8 @@ class Calc():
             self.total += self.current
         if self.op == "sub":
             self.total -= self.current
+        if self.op == "multi":
+            self.total *= self.current
         self.input_value=True
         self.check_sum=False
         self.display(self.total)
