@@ -58,6 +58,10 @@ class Calc():
             self.total /= self.current
         if self.op == "mod":
             self.total %= self.current
+        if self.op == "potencia":
+            self.total **= self.current
+        if self.op == "cociente":
+            self.total //= self.current
         self.input_value=True
         self.check_sum=False
         self.display(self.total)
@@ -91,11 +95,6 @@ class Calc():
     def e(self):
         self.result =  False
         self.current = math.e
-        self.display(self.current)
-
-    def exp(self):
-        self.result =  False
-        self.current = math.exp(float(txtDisplay.get()))
         self.display(self.current)
     
     def mathPM(self):
@@ -138,8 +137,51 @@ class Calc():
         self.current = math.sinh(math.radians(float(txtDisplay.get())))
         self.display(self.current)
 
-added_value = Calc()
+    def acosh(self):
+        self.result = False
+        self.current = math.acosh(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def asinh(self):
+        self.result = False
+        self.current = math.asinh(float(txtDisplay.get()))
 
+    def log(self):
+        self.result = False
+        self.current = math.log(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def exp(self):
+        self.result = False
+        self.current = math.exp(float(txtDisplay.get()))
+        self.display(self.current)
+
+    def expm1(self):
+        self.result = False
+        self.current = math.expm1(float(txtDisplay.get()))
+        self.display(self.current)
+    
+    def log2(self):
+        self.result = False
+        self.current = math.log2(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def log10(self):
+        self.result = False
+        self.current = math.log10(float(txtDisplay.get()))
+        self.display(self.current)
+  
+    def log1p(self):
+        self.result = False
+        self.current = math.log1p(float(txtDisplay.get()))
+        self.display(self.current)
+
+    def degrees(self):
+        self.result = False
+        self.current = math.degrees(float(txtDisplay.get()))
+        self.display(self.current)
+
+added_value = Calc()
 
 txtDisplay = Entry(calc, font=('Helvetica',20,'bold'),
                    bg='black',fg='white',
@@ -254,7 +296,7 @@ btnsin = Button(calc, text="sin",width=6,
 btn_potencia = Button(calc, text="^",width=6, 
                 height=2,bg='black',fg='white',
                 font=('Helvetica',20,'bold'),
-                bd=4,command=lambda:added_value.potencia()
+                bd=4,command=lambda:added_value.operation("potencia")
                ).grid(row=2, column= 4, pady = 1)
   
 btnCosh = Button(calc, text="Cosh",width=6,
@@ -322,7 +364,7 @@ btnexpm1 = Button(calc, text="expm1",width=6,
 btnCociente = Button(calc, text="//",width=6,
                   height=2,bg='black',fg='white',
                   font=('Helvetica',20,'bold'),
-                  bd=4,command=lambda:added_value.cociente()
+                  bd=4,command=lambda:added_value.operation("cociente")
                  ).grid(row=4, column= 7, pady = 1)
 # ROW 5 :
 btnlog2 = Button(calc, text="log2",width=6, 
