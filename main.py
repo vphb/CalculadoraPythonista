@@ -108,6 +108,16 @@ class Calc():
         self.current = math.sqrt(float(txtDisplay.get()))
         self.display(self.current)
 
+    def cos(self):
+        self.result = False
+        self.current = math.cos(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
+  
+    def cosh(self):
+        self.result = False
+        self.current = math.cosh(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
+
 added_value = Calc()
 
 
