@@ -143,6 +143,7 @@ class Calc():
     def asinh(self):
         self.result = False
         self.current = math.asinh(float(txtDisplay.get()))
+        
     def log(self):
         self.result = False
         self.current = math.log(float(txtDisplay.get()))
