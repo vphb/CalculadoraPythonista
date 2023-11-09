@@ -95,8 +95,10 @@ class Calc():
             self.total **= self.current
         if self.op == "cociente":
             self.total //= self.current
+
         self.input_value = True
         self.check_sum = False
+
         self.display(self.total)
 
     def operation(self, op):
@@ -317,6 +319,7 @@ def log1p(self):
     self.current = math.log1p(float(txtDisplay.get()))
     self.display(self.current)
 
+
 def degrees(self):
     """
     Convierte el valor actual de radianes a grados y muestra el resultado.
@@ -327,7 +330,6 @@ def degrees(self):
     self.current = math.degrees(float(txtDisplay.get()))
     self.display(self.current)
 
-# Crea una instancia de la clase 'Calc' para gestionar las operaciones de la calculadora.
 added_value = Calc()
 
 # Crea un campo de entrada de texto (display) para mostrar los números y resultados.
@@ -523,6 +525,7 @@ btnasinh = Button(calc, text="asinh", width=6, height=2, bg='black', fg='white',
 lblDisplay = Label(calc, text="Scientific Calculator", font=('Helvetica', 30, 'bold'),
                 bg='black', fg='white', justify=CENTER)
 lblDisplay.grid(row=0, column=4, columnspan=4)
+
   
 def iExit():
     """
