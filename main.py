@@ -118,217 +118,217 @@ class Calc():
         self.op = op
         self.result = False
     
-def Clear_Entry(self):
-    """
-    Limpia la entrada actual y restablece la calculadora a cero.
+    def Clear_Entry(self):
+        """
+        Limpia la entrada actual y restablece la calculadora a cero.
 
-    Restablece la entrada actual a "0", borra la pantalla y permite una nueva entrada.
-    """
-    self.result = False
-    self.current = "0"
-    self.display(0)
-    self.input_value = True
+        Restablece la entrada actual a "0", borra la pantalla y permite una nueva entrada.
+        """
+        self.result = False
+        self.current = "0"
+        self.display(0)
+        self.input_value = True
 
-def All_Clear_Entry(self):
-    """
-    Borra completamente la calculadora.
+    def All_Clear_Entry(self):
+        """
+        Borra completamente la calculadora.
 
-    Limpia la entrada y restablece el total a cero, dejando la calculadora lista para una nueva operación.
-    """
-    self.Clear_Entry()
-    self.total = 0
+        Limpia la entrada y restablece el total a cero, dejando la calculadora lista para una nueva operación.
+        """
+        self.Clear_Entry()
+        self.total = 0
 
-def pi(self):
-    """
-    Establece el valor actual en Pi (π) y muestra el resultado.
+    def pi(self):
+        """
+        Establece el valor actual en Pi (π) y muestra el resultado.
 
-    Pi (π) es una constante matemática aproximadamente igual a 3.141592653589793.
-    """
-    self.result = False
-    self.current = math.pi
-    self.display(self.current)
+        Pi (π) es una constante matemática aproximadamente igual a 3.141592653589793.
+        """
+        self.result = False
+        self.current = math.pi
+        self.display(self.current)
 
-def e(self):
-    """
-    Establece el valor actual en e y muestra el resultado.
+    def e(self):
+        """
+        Establece el valor actual en e y muestra el resultado.
 
-    'e' es la base del logaritmo natural y es una constante matemática aproximadamente igual a 2.718281828459045.
-    """
-    self.result = False
-    self.current = math.e
-    self.display(self.current)
+        'e' es la base del logaritmo natural y es una constante matemática aproximadamente igual a 2.718281828459045.
+        """
+        self.result = False
+        self.current = math.e
+        self.display(self.current)
 
-def mathPM(self):
-    """
-    Cambia el signo del valor actual y muestra el resultado.
+    def mathPM(self):
+        """
+        Cambia el signo del valor actual y muestra el resultado.
 
-    Cambia el signo del valor actual (positivo a negativo o viceversa) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = -(float(txtDisplay.get()))
-    self.display(self.current)
+        Cambia el signo del valor actual (positivo a negativo o viceversa) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = -(float(txtDisplay.get()))
+        self.display(self.current)
 
-def squared(self):
-    """
-    Calcula la raíz cuadrada del valor actual y muestra el resultado.
+    def squared(self):
+        """
+        Calcula la raíz cuadrada del valor actual y muestra el resultado.
 
-    Calcula la raíz cuadrada del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.sqrt(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula la raíz cuadrada del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.sqrt(float(txtDisplay.get()))
+        self.display(self.current)
 
-def cos(self):
-    """
-    Calcula el coseno del valor actual (en grados) y muestra el resultado.
+    def cos(self):
+        """
+        Calcula el coseno del valor actual (en grados) y muestra el resultado.
 
-    Calcula el coseno del valor actual (en grados) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.cos(math.radians(float(txtDisplay.get())))
-    self.display(self.current)
-  
-def cosh(self):
-    """
-    Calcula el coseno hiperbólico del valor actual (en grados) y muestra el resultado.
+        Calcula el coseno del valor actual (en grados) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.cos(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
+    
+    def cosh(self):
+        """
+        Calcula el coseno hiperbólico del valor actual (en grados) y muestra el resultado.
 
-    Calcula el coseno hiperbólico del valor actual (en grados) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.cosh(math.radians(float(txtDisplay.get())))
-    self.display(self.current)
+        Calcula el coseno hiperbólico del valor actual (en grados) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.cosh(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
 
-def tan(self):
-    """
-    Calcula la tangente del valor actual (en grados) y muestra el resultado.
+    def tan(self):
+        """
+        Calcula la tangente del valor actual (en grados) y muestra el resultado.
 
-    Calcula la tangente del valor actual (en grados) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.tan(math.radians(float(txtDisplay.get())))
-    self.display(self.current)
+        Calcula la tangente del valor actual (en grados) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.tan(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
 
-def tanh(self):
-    """
-    Calcula la tangente hiperbólica del valor actual (en grados) y muestra el resultado.
+    def tanh(self):
+        """
+        Calcula la tangente hiperbólica del valor actual (en grados) y muestra el resultado.
 
-    Calcula la tangente hiperbólica del valor actual (en grados) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.tanh(math.radians(float(txtDisplay.get())))
-    self.display(self.current)
+        Calcula la tangente hiperbólica del valor actual (en grados) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.tanh(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
 
-def sin(self):
-    """
-    Calcula el seno del valor actual (en grados) y muestra el resultado.
+    def sin(self):
+        """
+        Calcula el seno del valor actual (en grados) y muestra el resultado.
 
-    Calcula el seno del valor actual (en grados) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.sin(math.radians(float(txtDisplay.get())))
-    self.display(self.current)
+        Calcula el seno del valor actual (en grados) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.sin(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
 
-def sinh(self):
-    """
-    Calcula el seno hiperbólico del valor actual (en grados) y muestra el resultado.
+    def sinh(self):
+        """
+        Calcula el seno hiperbólico del valor actual (en grados) y muestra el resultado.
 
-    Calcula el seno hiperbólico del valor actual (en grados) y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.sinh(math.radians(float(txtDisplay.get())))
-    self.display(self.current)
+        Calcula el seno hiperbólico del valor actual (en grados) y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.sinh(math.radians(float(txtDisplay.get())))
+        self.display(self.current)
 
-def acosh(self):
-    """
-    Calcula el coseno hiperbólico inverso del valor actual y muestra el resultado.
+    def acosh(self):
+        """
+        Calcula el coseno hiperbólico inverso del valor actual y muestra el resultado.
 
-    Calcula el coseno hiperbólico inverso del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.acosh(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula el coseno hiperbólico inverso del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.acosh(float(txtDisplay.get()))
+        self.display(self.current)
 
-def asinh(self):
-    """
-    Calcula el seno hiperbólico inverso del valor actual y muestra el resultado.
+    def asinh(self):
+        """
+        Calcula el seno hiperbólico inverso del valor actual y muestra el resultado.
 
-    Calcula el seno hiperbólico inverso del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.asinh(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula el seno hiperbólico inverso del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.asinh(float(txtDisplay.get()))
+        self.display(self.current)
 
-def log(self):
-    """
-    Calcula el logaritmo natural del valor actual y muestra el resultado.
+    def log(self):
+        """
+        Calcula el logaritmo natural del valor actual y muestra el resultado.
 
-    Calcula el logaritmo natural (base e) del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.log(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula el logaritmo natural (base e) del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.log(float(txtDisplay.get()))
+        self.display(self.current)
 
-  
-def exp(self):
-    """
-    Calcula la función exponencial de e elevado a la potencia del valor actual y muestra el resultado.
+    
+    def exp(self):
+        """
+        Calcula la función exponencial de e elevado a la potencia del valor actual y muestra el resultado.
 
-    Calcula la función exponencial de e elevado a la potencia del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.exp(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula la función exponencial de e elevado a la potencia del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.exp(float(txtDisplay.get()))
+        self.display(self.current)
 
-def expm1(self):
-    """
-    Calcula la función exponencial menos 1 de e elevado a la potencia del valor actual y muestra el resultado.
+    def expm1(self):
+        """
+        Calcula la función exponencial menos 1 de e elevado a la potencia del valor actual y muestra el resultado.
 
-    Calcula la función exponencial menos 1 de e elevado a la potencia del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.expm1(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula la función exponencial menos 1 de e elevado a la potencia del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.expm1(float(txtDisplay.get()))
+        self.display(self.current)
 
-def log2(self):
-    """
-    Calcula el logaritmo en base 2 del valor actual y muestra el resultado.
+    def log2(self):
+        """
+        Calcula el logaritmo en base 2 del valor actual y muestra el resultado.
 
-    Calcula el logaritmo en base 2 del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.log2(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula el logaritmo en base 2 del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.log2(float(txtDisplay.get()))
+        self.display(self.current)
 
-def log10(self):
-    """
-    Calcula el logaritmo en base 10 del valor actual y muestra el resultado.
+    def log10(self):
+        """
+        Calcula el logaritmo en base 10 del valor actual y muestra el resultado.
 
-    Calcula el logaritmo en base 10 del valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.log10(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula el logaritmo en base 10 del valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.log10(float(txtDisplay.get()))
+        self.display(self.current)
 
-def log1p(self):
-    """
-    Calcula el logaritmo natural de 1 más el valor actual y muestra el resultado.
+    def log1p(self):
+        """
+        Calcula el logaritmo natural de 1 más el valor actual y muestra el resultado.
 
-    Calcula el logaritmo natural de 1 más el valor actual y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.log1p(float(txtDisplay.get()))
-    self.display(self.current)
+        Calcula el logaritmo natural de 1 más el valor actual y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.log1p(float(txtDisplay.get()))
+        self.display(self.current)
 
 
-def degrees(self):
-    """
-    Convierte el valor actual de radianes a grados y muestra el resultado.
+    def degrees(self):
+        """
+        Convierte el valor actual de radianes a grados y muestra el resultado.
 
-    Convierte el valor actual de radianes a grados y lo muestra en la pantalla.
-    """
-    self.result = False
-    self.current = math.degrees(float(txtDisplay.get()))
-    self.display(self.current)
+        Convierte el valor actual de radianes a grados y lo muestra en la pantalla.
+        """
+        self.result = False
+        self.current = math.degrees(float(txtDisplay.get()))
+        self.display(self.current)
 
 added_value = Calc()
 
